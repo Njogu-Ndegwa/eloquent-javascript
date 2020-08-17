@@ -29,6 +29,43 @@ for(let i = 1; i<= 100; i++) {
 }
 
 
+// ChessBoard
 
+let x = ""
+let size = 8
+
+for(let i = 1; i <= size; i++) {
+    for(let j = 1; j <= 9; j++) {
+        if((i % 2 == 0)) {
+            if((j % 2 !== 0) && (j !==9)) {
+                x = x + '#'
+            } 
+            else if(j % 2 == 0) {
+                x = x + ' '
+            } 
+            
+            else if (j === 9) {
+                x = x+ '\n'
+            }
+        }
+
+        else if(i % 2 !== 0){
+            if(j % 2 == 0 ){
+                x = x + '#'
+            }
+
+            else if((j % 2 !== 0) && (j !==9)) {
+                x = x + ' '
+            }
+
+            else if (j === 9) {
+                x = x+ '\n'
+            }
+        }
+     
+    }
+}
+
+console.log(x)
 
 
