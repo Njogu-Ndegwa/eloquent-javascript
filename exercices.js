@@ -99,3 +99,14 @@ function findSolution(target) {
     return find(1, '1');
 }
 
+
+//  Math.min for two numbers
+
+function smallestNumber(a, b) {
+    if(a < b) {
+        return a
+    }
+    else {
+        return b
+    }
+}
